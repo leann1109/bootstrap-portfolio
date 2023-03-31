@@ -1,0 +1,19 @@
+/* Nav link color */
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+/* Nav link hover */
+.nav-item:hover .nav-link {
+    background-color: white;
+    color: black;
+}
+
+img {
+    height:70px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}

@@ -12,11 +12,13 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
 
-    <body style="padding-top:60px;">
+    <body>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
             <a class="navbar-brand" href="#">Lean Obregon</a>
+
+            <!-- Sidebar Nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,26 +47,33 @@
         </nav>
 
         <!--About Me Section-->
-        <div class="container-fluid text-center" id="container-fluid">
+        <div class="container-fluid sm-text-center bg-dark mt-5 ">
             <h1>About Me</h1>
+            <p class="container-fluid text-light justify-content-start">
+                Web Developer
+            </p>
         </div>
             
         <!--Skills-->
-                <div class="container-fluid p-2 text-center">
+                <div class="d-flex justify-content-evenly p-2 text-center">
                     <div>
                         <h1>Languages</h1>
-                        <figure >
+                        <div class="row-1 justify-content-evenly">
+                        <figure>
                             <img alt="html logo" 
                                 id="html" 
                                 src="html.png">
                             <figcaption>HTML</figcaption>
                         </figure>
+                        
+                        
                         <figure>
                             <img alt="css logo" 
                                 id="css" 
                                 src="css.png">
                             <figcaption>CSS</figcaption>
-                        </figure>    
+                        </figure>   
+                    
                         <figure>
                             <img alt="javascript logo"
                                 id="js" 
@@ -77,11 +86,13 @@
                                 src="mysql.png">
                             <figcaption>MySql</figcaption>
                         </figure>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="container-fluid p-2 text-center">
-                    <h1>Libraries</h1>
+                    <h1>Frameworks</h1>
                         <figure>
                             <img alt="react logo"
                                 id="react" 
@@ -102,24 +113,27 @@
         </div>
 
         <!--Contact Me Section-->
-        <div class="container-fluid text-center" id="contact">
-            <h1>Contact</h1>
+        <div class="container-fluid text-center bg-dark p-2">
+            <h1 class="text-light p-2">Contact</h1>
 
-            <form class="contact" id="contact-form">
-                <input class="row d-block" type="text" placeholder="First Name" />
-                <input class="row d-block" type="email" placeholder="Email" />
-                <textarea placeholder="Message" rows="10" cols="50"></textarea>
-            </form>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control " placeholder="Email" aria-label="Email">
+                </div>
+            </div>
+              
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+            </div>
 
-            <button type="submit" id="submit">Submit</button>
+            <button type="button" class="btn btn-light mb-2">Submit</button>
         </div>
 
         <!--Bootstrap Javascript-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="bootstrap.min.js"></script>
     </body>
-
-    <footer>
-
-    </footer>
 </html>
